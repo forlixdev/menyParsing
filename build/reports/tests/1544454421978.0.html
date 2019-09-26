@@ -1,0 +1,59 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signicat Standard Template</title>
+        
+        <!--JQUERY-->
+        <!--Uncomment only if method depends on jQuery-->
+        <script src="https://qa.signicat.com/std/resource/signicat/improvement-assets/js/lib/jquery-1.11.3.min.js"></script>
+        <!--ENDS JQUERY-->
+        
+        <style>.bankid-container-defaults { width: 396px; height: 280px; }</style>
+
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/normalize.css" />
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/buttons.css" />
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/form-elements.css" />
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/legacy-portal.css" />
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/improvement.css" />
+        
+        <!--CSS for legacy MultiSignUI-->
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/multisign/style.css" />
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/multisign/signicat.css" />
+        <!--ENDS CSS for legacy MultiSignUI-->
+        
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/improvement-assets/css/customer-adjustments.css" />
+<!--<link rel="stylesheet" href="https://qa.signicat.com/std/resource/signicat/finport.css">-->
+        <!--Ends custom CSS-->
+    </head>
+    <body class="has-header">
+        <div class="fullscreen-header">
+            <div class="company-logo"></div>
+        </div>
+        <div class="wrapper-container">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="company-logo"></div>
+                </div>  
+                <div class="content">
+                    <div id="bankid-container" class="bankid-container-defaults"><iframe frameborder="0" width="100%" height="100%" src="https://csfe-preprod.bankid.no/CentralServerFEJS/a?cid=NL3mPPhg06KVewHm" title="BankID"></iframe></div>
+
+<script type="text/javascript" src="https://services-preprod.bankid.no/test/precheck/bid-browser-test.js"></script>
+
+<script type="text/javascript">
+    var signicat = signicat || {};
+    signicat.baseUrl = 'https://qa.signicat.com/std/method/signicat/59f6ed5dcc224638b98a5b03a13863c93bbb7790fc8d11e8a4a3005056ac003b/';
+    signicat.helperUrl = 'https://csfe-preprod.bankid.no/CentralServerFEJS/Gateway/helper20.js?cid=NL3mPPhg06KVewHm';
+    signicat.clientId = 'NL3mPPhg06KVewHm';
+    signicat.clientLegacyMode = true;
+</script>
+
+<script src="/plugins/bankid-js/webclient/v1.3/js/generated/bankid.min.js"></script>
+
+<script type="text/javascript">
+    signicat.doBrowserTest(signicat.loadClient, signicat.reportBrowserNotSupported);
+</script>
+                </div>
+            </div>
+        </div>
+    
+<script type="text/javascript" src="https://csfe-preprod.bankid.no/CentralServerFEJS/Gateway/helper20.js?cid=NL3mPPhg06KVewHm"></script></body></html>
