@@ -2,27 +2,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.signicat.frafor.testJava</groupId>
-	<artifactId>testJava</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<organization>
-		<name>SIGNICAT AS</name>
-		<url>https://www.signicat.com/</url>
-	</organization>
+	<groupId>com.forlixdev.test</groupId>
+	<artifactId>scraptest</artifactId>
+	<version>0.0.1</version>
+
 
 	<properties>
-		<cucumber.version>4.2.3</cucumber.version>
 		<maven.compiler.version>3.3</maven.compiler.version>
-		<java.version>1.8</java.version>
 		<apache.log4j2.version>2.6</apache.log4j2.version>
-		<mysql.version>6.0.6</mysql.version>
 		<surefire.plugin.version>2.22.0</surefire.plugin.version>
-		<selenium.version>3.14.0</selenium.version>
-		<selenide.version>5.0.1</selenide.version>
 		<restassured.version>3.1.1</restassured.version>
-		<jtwig.version>5.87.0.RELEASE</jtwig.version>
 		<jsoup.version>1.11.3</jsoup.version>
-		<javax.version>1.6.2</javax.version>
 	</properties>
 
 	<dependencies>
@@ -31,16 +21,6 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.28</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.mail</groupId>
-			<artifactId>javax.mail</artifactId>
-			<version>${javax.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql.version}</version>
 		</dependency>
 		<!-- Log4j -->
 		<dependency>
@@ -54,26 +34,10 @@
 			<artifactId>log4j-core</artifactId>
 			<version>${apache.log4j2.version}</version>
 		</dependency>
-		<!-- Selenium -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>${selenium.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.codeborne</groupId>
-			<artifactId>selenide</artifactId>
-			<version>${selenide.version}</version>
-		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>${restassured.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jtwig</groupId>
-			<artifactId>jtwig-core</artifactId>
-			<version>${jtwig.version}</version>
 		</dependency>
 		<!-- Jsoup -->
 		<dependency>
@@ -81,55 +45,14 @@
 			<artifactId>jsoup</artifactId>
 			<version>${jsoup.version}</version>
 		</dependency>
-
-		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>7.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.4</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
-		<dependency>
-			<groupId>org.apache.pdfbox</groupId>
-			<artifactId>pdfbox</artifactId>
-			<version>2.0.14</version>
-		</dependency>
-		<dependency>
-			<groupId>org.yaml</groupId>
-			<artifactId>snakeyaml</artifactId>
-			<version>1.21</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
-		<dependency>
-			<groupId>commons-validator</groupId>
-			<artifactId>commons-validator</artifactId>
-			<version>1.6</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
-		<dependency>
-			<groupId>com.nimbusds</groupId>
-			<artifactId>nimbus-jose-jwt</artifactId>
-			<version>7.4</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
-		<dependency>
-			<groupId>com.jayway.jsonpath</groupId>
-			<artifactId>json-path</artifactId>
-			<version>2.4.0</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
 		<plugins>
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+			<plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven.compiler.version}</version> <configuration> <encoding>UTF-8</encoding> 
 				<source>${java.version}</source> <target>${java.version}</target> <compilerArgument>-Werror</compilerArgument> 
-				</configuration> </plugin> -->
+				</configuration> </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
