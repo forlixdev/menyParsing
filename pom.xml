@@ -9,7 +9,7 @@
 
 	<properties>
 		<maven.compiler.version>3.3</maven.compiler.version>
-		<apache.log4j2.version>2.6</apache.log4j2.version>
+		<apache.log4j2.version>2.13.3</apache.log4j2.version>
 		<surefire.plugin.version>2.22.0</surefire.plugin.version>
 		<restassured.version>3.1.1</restassured.version>
 		<jsoup.version>1.11.3</jsoup.version>
